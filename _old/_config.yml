@@ -1,0 +1,25 @@
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            code
+tagline:          'Reflections of a developer passionate about it - compulsively'
+description:      'Reflections of a developer passionate about it - compulsively. Notes: posts aren''t just for developers; posts in portuguese and english too'
+url:              http://marcker.github.io
+baseurl:          /
+
+author:
+  name:           'Marcos Garcia'
+  url:            https://twitter.com/marcker
+
+paginate:         1
+
+# Custom vars
+version:          0.2.1
+
+github:
+  repo:           https://github.com/marcker/marcker.github.io

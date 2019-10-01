@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>code</title>
+ <link href="http://marcker.github.io/atom.xml" rel="self"/>
+ <link href="http://marcker.github.io/"/>
+ <updated>2014-08-21T11:37:43-03:00</updated>
+ <id>http://marcker.github.io</id>
+ <author>
+   <name>Marcos Garcia</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>New versus old</title>
+   <link href="http://marcker.github.io/projects/2014/08/18/new-versus-old/"/>
+   <updated>2014-08-18T05:43:28-03:00</updated>
+   <id>http://marcker.github.io/projects/2014/08/18/new-versus-old</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;http://marcker.github.io/assets/new-portal.jpg&quot; alt=&quot;Portal Mauá e Região&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;I started working at &lt;em&gt;Grupo Mauá e Região de Comunicação&lt;/em&gt; with the proposal to build new projects and handle maintenance of existing projects. I didn&amp;#39;t expect it to be so complicated to make changes in such a poorly designed and completely out of any development standard product. Did much to improve (and improve) our &lt;a href=&quot;https://github.com/GrupoMauaRegiao/portal-v1&quot;&gt;news portal&lt;/a&gt; with significant effort. However, we cannot draw many legacy codes and scripts poorly designed: a new product needed to be built in parallel.&lt;/p&gt;
+
+&lt;p&gt;Thus, from March to July worked hard to build a new product that could meet the needs of our audience, both to use the following features:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CMS (WordPress, PHP)&lt;/li&gt;
+&lt;li&gt;HTML 5&lt;/li&gt;
+&lt;li&gt;Sass (CSS 3)&lt;/li&gt;
+&lt;li&gt;CoffeeScript (JavaScript)&lt;/li&gt;
+&lt;li&gt;Grunt tasks:
+
+&lt;ul&gt;
+&lt;li&gt;Compile CoffeeScript&lt;/li&gt;
+&lt;li&gt;Compile Sass&lt;/li&gt;
+&lt;li&gt;Coffelint&lt;/li&gt;
+&lt;li&gt;JShint&lt;/li&gt;
+&lt;li&gt;YUI Compressor: minify JavaScript and CSS&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;grunt-shell&lt;/code&gt; runs after everything to run &lt;code&gt;rsync&lt;/code&gt; to send files as specified in the &lt;code&gt;config&lt;/code&gt;, with script &lt;code&gt;deployit.sh&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Docco for documentation of CoffeeScript&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Then launched July 24 the new &lt;a href=&quot;http://portalmauaeregiao.com.br&quot;&gt;Portal Mauá e Região&lt;/a&gt; and achieved an excellent result compared to the same period last year:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;July 24 to August 17, 2013: &lt;strong&gt;4236&lt;/strong&gt; (page views)&lt;/li&gt;
+&lt;li&gt;July 24 to August 17, 2014: &lt;strong&gt;9895&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Most of the source code is open source, so you can view it on GitHub:
+&lt;a href=&quot;https://github.com/GrupoMauaRegiao/PortalMauaERegiao-v2&quot;&gt;https://github.com/GrupoMauaRegiao/PortalMauaERegiao-v2&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Conheça 3 dicas interessantes para socializar</title>
+   <link href="http://marcker.github.io/posts/dicas/2014/02/05/conheca-3-dicas-interessantes-para-socializar/"/>
+   <updated>2014-02-05T12:29:56-02:00</updated>
+   <id>http://marcker.github.io/posts/dicas/2014/02/05/conheca-3-dicas-interessantes-para-socializar</id>
+   <content type="html">&lt;p&gt;Hoje minha publicação não será sobre alguma linguagem de programação ou qualquer ferramenta para desenvolver melhor, mas sobre 3 lugares para se ir caso você esteja começando (ou não) e quer aprender e socializar com pessoas da área (vulgo nerds ou geeks).&lt;/p&gt;
+
+&lt;p&gt;Infelizmente neste post destacarei poucos lugares/eventos, no entanto, você pode contribuir com o &lt;a href=&quot;https://github.com/marcker/meet-devs&quot;&gt;documento&lt;/a&gt; que criei no Github: edite o documento dando a sua sugestão de lugar para ir do seu estado e compartilhe com a comunidade \o/.&lt;/p&gt;
+
+&lt;p&gt;Bom, então vamos a lista:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;(1) &lt;a href=&quot;https://garoa.net.br&quot;&gt;Garoa Hacker Clube&lt;/a&gt; (GHC)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ao meu ver, este local é excelente se você quer fazer &lt;em&gt;networking&lt;/em&gt; e aprender. O GHC possui atividades regulares e outras esporádicas (aulas, oficinas, meetups e etc.) ligadas a tecnologia. Para citar alguns eventos que participei:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://garoa.net.br/wiki/Encontro_sobre_node.js_do_NodeBR&quot;&gt;Encontro do grupo Node BR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://garoa.net.br/wiki/Python_Pr%C3%A1tico&quot;&gt;Python Prático&lt;/a&gt; com &lt;a href=&quot;https://twitter.com/ramalhoorg&quot;&gt;Luciano Ramalho&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://garoa.net.br/wiki/Hackday&quot;&gt;Open Hack Day&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;É importante frisar que as atividades são geralmente gratuitas, porém, você pode contribuir financeiramente comprando camisetas, stickers, bebidas e/ou até um delicioso churrasco.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;(2) Conferências e &amp;quot;eventos&amp;quot;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ir a conferências e alguns &amp;quot;eventos&amp;quot; é essencial, pois, você irá conhecer muitas, muitas pessoas - se quiser, é claro. Além disso, você irá conseguir stickers para o seu notebook, camisetas e sim, aprender muuuito!&lt;/p&gt;
+
+&lt;p&gt;Fique atento nas principais fontes (grupos, comunidades, facebook) para saber quais são as próximas e fazer sua inscrição pagando menos:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://qconsp.com/&quot;&gt;QCon SP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://abrilproruby.com/pt/&quot;&gt;Abril Pro Ruby&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.devcamp.com.br/&quot;&gt;DevCamp 2014&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;E muitos outros.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;(3) Meetups&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Meetups são reuniões marcadas com certa antecedência a fim de abordar algum assunto (linguagem, plataforma, sistema operacional... Qualquer coisa!). O website que sempre acompanho é o &lt;a href=&quot;http://www.meetup.com/&quot;&gt;meetup.com&lt;/a&gt; na qual possui um sistema de busca muito eficiente que lhe trará o resultado esperado.&lt;/p&gt;
+
+&lt;p&gt;Alguns encontros (ou meetups, com queira) bem frequentados:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.meetup.com/Ember-js-Sao-Paulo/&quot;&gt;EmberJS SP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.meetup.com/AngularJS-Sao-Paulo/&quot;&gt;AngularJS SP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.meetup.com/GDG-SP/&quot;&gt;Google Developer Group&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.meetup.com/SP-MongoDB/&quot;&gt;São Paulo MongoDB User Group&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Entre outros.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Então e isso galera. Um dia desses nos veremos em algum destes lugares e não esqueça de adicionar os itens que você sabe no &lt;a href=&quot;https://github.com/marcker/meet-devs&quot;&gt;arquivo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!-- Links --&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Sprites com ImageMagick</title>
+   <link href="http://marcker.github.io/posts/processamento/imagens/2014/01/30/sprites-com-imagemagick/"/>
+   <updated>2014-01-30T07:53:34-02:00</updated>
+   <id>http://marcker.github.io/posts/processamento/imagens/2014/01/30/sprites-com-imagemagick</id>
+   <content type="html">&lt;p&gt;Muitas vezes em meu &lt;a href=&quot;http://grupomauaeregiao.com.br/&quot;&gt;trabalho&lt;/a&gt;, recebo do designer gráfico -- ou web designer -- um conjunto de imagens que irão compor um novo projeto ou uma correção: ícones, &lt;em&gt;layouts&lt;/em&gt; e outros itens que não poderão ser construídos por meio de códigos (HTML e CSS).&lt;/p&gt;
+
+&lt;p&gt;Sendo assim, opto por agrupar os ícones em um mesmo arquivo de imagem (geralmente &lt;code&gt;.png&lt;/code&gt;) -- imagem esta conhecida como &lt;a href=&quot;http://pt.wikipedia.org/wiki/Sprite_%28gr%C3%A1fico%29&quot;&gt;sprite&lt;/a&gt;. O &lt;em&gt;conceito de sprites&lt;/em&gt; não é novo, pois, já o utilizavam/utilizam em jogos para criar a ilusão de movimento de algum item (por exemplo, em personagens). Cada parte da imagem é então a representação de movimento.&lt;/p&gt;
+
+&lt;p&gt;Para a web, sprites são utilizados a fim de se evitar que muitas requisições sejam feitas ao servidor, evitando-se também o consumo de banda que estas requisições causam.&lt;/p&gt;
+
+&lt;p&gt;Mas então? Como criar estas imagens? A princípio você pode utilizar um editor de imagens de sua prefêrencia e agrupar estas imagens uma a uma, criando uma composição. Porém, este método será trabalhoso e demorado, e muitas vezes você não obterá o resultado esperado, pois, &amp;quot;não somos designers!&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;Assim, você poderá optar pela ferramenta &lt;a href=&quot;http://www.imagemagick.org/script/index.php&quot;&gt;ImageMagick&lt;/a&gt; para criar os seus sprites via linha de comando (eu uso &lt;a href=&quot;http://konsole.kde.org/&quot;&gt;Konsole&lt;/a&gt; com &lt;a href=&quot;http://www.zsh.org/&quot;&gt;Zsh&lt;/a&gt; e &lt;a href=&quot;https://github.com/sorin-ionescu/prezto&quot;&gt;Prezto&lt;/a&gt;):&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;mkdir sprites &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; montage * &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  -monitor &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  -geometry +5+5 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  -background none &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  sprites/sprite-icones.png
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;O comando &lt;code&gt;mkdir sprites&lt;/code&gt; indica que criamos uma pasta chamada &lt;strong&gt;sprites&lt;/strong&gt; e em seguida utilizamos o comando &lt;code&gt;montage&lt;/code&gt;, que pertence a suíte de software ImageMagick. No comando &lt;code&gt;montage&lt;/code&gt; aplicamos alguns parâmetros:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-monitor&lt;/code&gt; - mostra o que está sendo processado e a porcentagem de sucesso;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-geometry&lt;/code&gt;- indique a posição de cada imagem, no nosso caso aplicamos &lt;code&gt;+5+5&lt;/code&gt;, ou seja, cada imagem será separada por &lt;code&gt;5px&lt;/code&gt; (horizontalmente e verticalmente);&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-background&lt;/code&gt; - indicamos &lt;code&gt;none&lt;/code&gt;, pois, não desejamos nenhum fundo para o nosso sprite;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sprites/sprite-icones.png&lt;/code&gt; - e por fim, indicamos a pasta &lt;code&gt;sprites&lt;/code&gt; e um nome para o arquivo e seu formato.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ao executar este comando, após algum tempo, o sprite será criado e você já poderá utilizá-lo em seus projetos. Simples assim.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Adendo&lt;/strong&gt;: aqui abordei o comando &lt;code&gt;montage&lt;/code&gt; de forma simplificada. Você pode explorar mais o assunto no website do ImageMagick: há diversas opções e ele possui muitas &lt;em&gt;API&lt;/em&gt;s para linguagens de programação. Bom estudo!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Um shellscript que ajudará você a fazer deploy</title>
+   <link href="http://marcker.github.io/posts/programacao/deploy/2014/01/26/um-shellscript-que-ajudara-voce-a-fazer-deploy/"/>
+   <updated>2014-01-26T12:11:44-02:00</updated>
+   <id>http://marcker.github.io/posts/programacao/deploy/2014/01/26/um-shellscript-que-ajudara-voce-a-fazer-deploy</id>
+   <content type="html">&lt;p&gt;Em 2012, eu utilizava &lt;em&gt;FTP&lt;/em&gt; - geralmente com a ajuda do &lt;a href=&quot;https://filezilla-project.org/&quot;&gt;Filezilla&lt;/a&gt; - para fazer deploy de alguns projetos que eu trabalhava. Isso realmente era demorado e complicado, pois, se houvesse alguma alteração a ser feita em muitos arquivos por exemplo, eu teria de identificá-los e assim, mandá-los para o servidor um a um via Filezilla (ou tudo de novo, para evitar que eu esquecesse de algum). Este realmente é um processo terrível e demorado, já que toda vez você terá que pensar no que enviar, terá ainda que certificar-se qual arquivo modificado é preciso ser enviado. Sei que muitos ainda tem o FTP em seu &lt;em&gt;workflow&lt;/em&gt; e a você que se encaixa nesta descrição eu digo: &amp;quot;Deixe isso urgentemente!&amp;quot;.&lt;/p&gt;
+
+&lt;p&gt;Sendo assim, procurei na web soluções melhores para fazer deploys simples (para projetos simples) e achei muitas opções, entre elas o &lt;a href=&quot;http://rsync.samba.org/&quot;&gt;Rsync&lt;/a&gt;, no qual optei usar pela simplicidade e pela possiblidade de integração com &lt;em&gt;SSH&lt;/em&gt; oferecida.&lt;/p&gt;
+
+&lt;p&gt;Então, a quatro meses criei um script shell que uso diariamente para fazer meus deploys de forma rápida e simplificada utilizando &lt;em&gt;Rsync&lt;/em&gt; e SSH. O script é composto de dois arquivos: &lt;code&gt;config&lt;/code&gt; e &lt;code&gt;deployit.sh&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;config&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;file_or_directory, ssh_data, destination
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;deployit.sh&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+
+&lt;span class=&quot;nv&quot;&gt;file_or_directory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;awk -F&lt;span class=&quot;s2&quot;&gt;&amp;quot;, &amp;quot;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;{print $1}&amp;#39;&lt;/span&gt; config&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;ssh_data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;awk -F&lt;span class=&quot;s2&quot;&gt;&amp;quot;, &amp;quot;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;{print $2}&amp;#39;&lt;/span&gt; config&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;destination&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;awk -F&lt;span class=&quot;s2&quot;&gt;&amp;quot;, &amp;quot;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;{print $3}&amp;#39;&lt;/span&gt; config&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+deployit &lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[[&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$file_or_directory&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$ssh_data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$destination&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
+rsync -avz -e ssh &lt;span class=&quot;nv&quot;&gt;$file_or_directory&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$ssh_data&lt;/span&gt;:&lt;span class=&quot;nv&quot;&gt;$destination&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; -e &lt;span class=&quot;s2&quot;&gt;&amp;quot;Missing parameter (s).&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+initializer&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  deployit&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+initializer&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Como podem observar acima, o procedimento adotado é bem simples: o arquivo &lt;code&gt;deployit.sh&lt;/code&gt; lê o arquivo &lt;code&gt;config&lt;/code&gt; que possui as configurações básicas do SSH e a localização do (s) arquivo (s) de origem e destino. Por exemplo, eu quero enviar todos os arquivos do diretório que o &lt;code&gt;deployit.sh&lt;/code&gt; está para a pasta &lt;code&gt;public_html&lt;/code&gt; de um servidor qualquer. O arquivo &lt;code&gt;config&lt;/code&gt; ficará dessa forma:&lt;/p&gt;
+
+&lt;p&gt;config&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;*, usuariofoo@ftp.example.com, ~/public_html/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Logo, você executará via terminal o comando &lt;code&gt;./deployit&lt;/code&gt; para enviar os arquivos alterados apenas (automagicamente :-) ).&lt;/p&gt;
+
+&lt;p&gt;Caso a porta do SSH não seja a padrão você pode substituir a linha &lt;code&gt;8&lt;/code&gt; por está aqui:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;rsync -avz -e &lt;span class=&quot;s1&quot;&gt;&amp;#39;ssh -p porta_aqui&amp;#39;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$file_or_directory&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$ssh_data&lt;/span&gt;:&lt;span class=&quot;nv&quot;&gt;$destination&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Bom galera é isso. Caso tenha alguma dúvida podem me contactar via e-mail. Caso queira contribuir faça um fork do projeto no GitHub.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/marcker/deployit&quot;&gt;Deployit - https://github.com/marcker/deployit&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Iniciando com Jekyll e GitHub Pages</title>
+   <link href="http://marcker.github.io/posts/programacao/2014/01/25/iniciando-com-jekyll-e-github-pages/"/>
+   <updated>2014-01-25T12:29:56-02:00</updated>
+   <id>http://marcker.github.io/posts/programacao/2014/01/25/iniciando-com-jekyll-e-github-pages</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;http://marcker.github.io/assets/jekyll-logo.png&quot; alt=&quot;Logotipo do Jekyll&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Este é o meu mais novo blog, o &lt;code&gt;Ultracode&lt;/code&gt; - nome inspirado pelo meu computador principal - que tem por objetivo relatar os projetos que tenho trabalhado, dicas e tutoriais sobre o universo computacional a partir da perspectiva Unix. O template do layout ainda é o padrão do &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;, porém, estou desenvolvendo um novo template para este projeto (lendo a &lt;a href=&quot;http://jekyllrb.com/docs/home/&quot;&gt;documentação&lt;/a&gt;) e nos próximos dias pretendo publicá-lo.&lt;/p&gt;
+
+&lt;p&gt;Desde de já agradeço a sua visita e não deixe de ler as outras postagens em breve.&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>

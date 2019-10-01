@@ -1,0 +1,35 @@
+{
+  "name": "marcker.github.io",
+  "version": "2.0.0",
+  "description": "marcker.github.io",
+  "main": "server.js",
+  "scripts": {
+    "start": "./node_modules/nodemon/bin/nodemon.js index.js",
+    "css-lint": "node_modules/stylint/bin/stylint stylus --config .stylintrc",
+    "css-compile": "rm -rf public/css && mkdir -p public/css && node_modules/stylus/bin/stylus --sourcemap --compress stylus --out public/css --use ./node_modules/nib/lib/nib",
+    "css": "npm run css-lint && npm run css-compile",
+    "deploy": "node deploy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcker/marcker.github.io.git"
+  },
+  "author": "marcker <marckfree@gmail.com> (http://marcker.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcker/marcker.github.io/issues"
+  },
+  "homepage": "https://github.com/marcker/marcker.github.io#readme",
+  "dependencies": {
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "nib": "^1.1.2",
+    "nodemon": "^1.17.2",
+    "stylint": "^1.5.9",
+    "stylus": "^0.54.5",
+    "website-scraper": "^4.2.0"
+  },
+  "engines": {
+    "node": "9.4.0"
+  }
+}
