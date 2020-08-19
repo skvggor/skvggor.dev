@@ -1,8 +1,10 @@
-# [marcker.herokuapp.com](https://marcker.herokuapp.com)
+# [skuggor.dev](https://skuggor.dev)
 
 ---
 
-## Build
+See to file `package.json`.
+
+## Start
 
 ```bash
 npm i && npm start
@@ -10,8 +12,16 @@ npm i && npm start
 ```
 Go to http://localhost:8080.
 
+## Deploy
+
+```bash
+npm run deploy
+
+```
+Go to `./public`.
+
 ## License
 
 The MIT License ([MIT](https://github.com/marcker/ejs-playground/blob/master/license.md))
 
-Copyright (c) 2018 marcker
+Copyright (c) 2020 marcker
