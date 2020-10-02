@@ -27,7 +27,7 @@
     "nodemon": "^1.19.4",
     "stylint": "^1.5.9",
     "stylus": "^0.54.8",
-    "website-scraper": "^4.2.2"
+    "website-scraper": "^4.2.3"
   },
   "engines": {
     "node": "9.4.0"
