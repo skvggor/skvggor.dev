@@ -1,4 +1,4 @@
-# [skuggor.dev](https://skuggor.dev)
+# [skvggor.dev](https://skvggor.dev)
 
 ---
 
@@ -22,6 +22,6 @@ Go to `./public`.
 
 ## License
 
-The MIT License ([MIT](https://github.com/marcker/ejs-playground/blob/master/license.md))
+The MIT License ([MIT](https://github.com/marcker/skvggor.dev/blob/master/license.md))
 
 Copyright (c) 2020 marcker
