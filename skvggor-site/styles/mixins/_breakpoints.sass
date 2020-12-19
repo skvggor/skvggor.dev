@@ -1,0 +1,8 @@
+$breakpoints: ( 'small': ( min-width:  767px ), 'medium': ( min-width:  992px ), 'large':  ( min-width: 1200px ) ) !default
+
+@mixin respond-to($breakpoint)
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint)
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $breakpoint))}
+      @content
