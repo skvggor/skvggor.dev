@@ -1,10 +1,14 @@
 import styles from './index.module.sass'
 
-function FeaturedName() {
+
+function FeaturedName(props) {
+  const htmlDescription = () =>
+    ({ __html: props.description })
+
   return (
     <div>
-      <h1 className={styles.name}>skvggor</h1>
-      <p className={styles.description}>I'm a developer currently working with <a href="https://vuejs.org/">Vue</a> and <a href="https://reactjs.org/">React</a> at <a href="https://www.match.mt/">match.mt</a>.</p>
+      <h1 className={styles.name}>{props.name}</h1>
+      <p className={styles.description} dangerouslySetInnerHTML={htmlDescription()} />
     </div>
   )
 }

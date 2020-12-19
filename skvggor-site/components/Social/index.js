@@ -1,29 +1,46 @@
 import { SiGithub, SiTwitter, SiInstagram, SiLastDotFm } from 'react-icons/si'
 import { CgCode } from 'react-icons/cg'
+import { VscError } from 'react-icons/vsc'
 
 import styles from './index.module.sass'
 
-function Social() {
+function Social(props) {
+  const iconSwitcher = name => {
+    let icon
+
+    if (name === 'source-code') {
+      icon = <CgCode className="icon" />
+    }
+    else if (name === 'github') {
+      icon = <SiGithub className="icon" />
+    }
+    else if (name === 'twitter') {
+      icon = <SiTwitter className="icon" />
+    }
+    else if (name === 'instagram') {
+      icon = <SiInstagram className="icon" />
+    }
+    else if (name === 'last-fm') {
+      icon = <SiLastDotFm className="icon" />
+    }
+    else {
+      icon = <VscError className="icon" />
+    }
+
+    return icon
+  }
+
+  const social = props.items.map(item => (
+    <a
+      key={item.id}
+      href={item.link}
+    >
+      {iconSwitcher(item.icon)}
+    </a>
+  ))
+
   return (
-    <div>
-      <div className="social">
-        <a href="https://github.com/marcker/skvggor.dev/tree/master/skvggor-site">
-          <CgCode className="icon" />
-        </a>
-        <a href="https://github.com/marcker">
-          <SiGithub className="icon" />
-        </a>
-        <a href="https://twitter.com/marcker">
-          <SiTwitter className="icon" />
-        </a>
-        <a href="https://instagram.com/skvggor">
-          <SiInstagram className="icon" />
-        </a>
-        <a href="https://last.fm/user/skvggor">
-          <SiLastDotFm className="icon" />
-        </a>
-      </div>
-    </div>
+    <div className="social">{social}</div>
   )
 }
 
