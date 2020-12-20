@@ -2,13 +2,43 @@ import Head from 'next/head'
 
 import FeaturedName from '../components/FeaturedName'
 import Social from '../components/Social'
+import Link from '../components/Link'
 
 import styles from '../styles/Home.module.sass'
 
 export default function Home() {
   const content = {
     name: 'skvggor',
-    description: 'I\'m a developer currently working with <a href="https://vuejs.org/">Vue</a> and <a href="https://reactjs.org/">React</a> at <a href="https://www.match.mt/">match.mt</a>.',
+    description: [
+      {
+        id: 0,
+        text: 'I\'m a developer currently working with '
+      },
+      {
+        id: 1,
+        text: <Link type="vue" link="https://vuejs.org/" text="Vue" />
+      },
+      {
+        id: 2,
+        text: ' and '
+      },
+      {
+        id: 3,
+        text: <Link type="react" link="https://reactjs.org/" text="React" />
+      },
+      {
+        id: 4,
+        text: ' at '
+      },
+      {
+        id: 5,
+        text: <Link type="match" link="https://www.match.mt/" text="Match" />
+      },
+      {
+        id: 6,
+        text: '.'
+      }
+    ],
     social: [
       {
         id: 0,

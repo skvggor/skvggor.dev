@@ -1,3 +1,4 @@
+import { IconContext } from 'react-icons'
 import { SiGithub, SiTwitter, SiInstagram, SiLastDotFm } from 'react-icons/si'
 import { CgCode } from 'react-icons/cg'
 import { VscError } from 'react-icons/vsc'
@@ -9,22 +10,22 @@ function Social(props) {
     let icon
 
     if (name === 'source-code') {
-      icon = <CgCode className="icon" />
+      icon = <CgCode />
     }
     else if (name === 'github') {
-      icon = <SiGithub className="icon" />
+      icon = <SiGithub />
     }
     else if (name === 'twitter') {
-      icon = <SiTwitter className="icon" />
+      icon = <SiTwitter />
     }
     else if (name === 'instagram') {
-      icon = <SiInstagram className="icon" />
+      icon = <SiInstagram />
     }
     else if (name === 'last-fm') {
-      icon = <SiLastDotFm className="icon" />
+      icon = <SiLastDotFm />
     }
     else {
-      icon = <VscError className="icon" />
+      icon = <VscError />
     }
 
     return icon
@@ -35,7 +36,9 @@ function Social(props) {
       key={item.id}
       href={item.link}
     >
-      {iconSwitcher(item.icon)}
+      <IconContext.Provider value={{ className: 'icon' }}>
+        {iconSwitcher(item.icon)}
+      </IconContext.Provider>
     </a>
   ))
 

@@ -2,14 +2,19 @@ import styles from './index.module.sass'
 
 
 function FeaturedName(props) {
-  const htmlDescription = () =>
-    ({ __html: props.description })
+  const description = descriptionArray => {
+    return (
+      <p className={styles.description}>
+        {descriptionArray.map(piece => piece.text)}
+      </p>
+    )
+  }
 
   return (
-    <div>
+    <>
       <h1 className={styles.name}>{props.name}</h1>
-      <p className={styles.description} dangerouslySetInnerHTML={htmlDescription()} />
-    </div>
+      {description(props.description)}
+    </>
   )
 }
 
