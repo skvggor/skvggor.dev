@@ -3,10 +3,22 @@ import Head from 'next/head'
 import FeaturedName from '../components/FeaturedName'
 import Social from '../components/Social'
 import Link from '../components/Link'
+import LastFm from '../components/LastFm'
 
 import styles from '../styles/Home.module.sass'
 
-export default function Home() {
+export const getStaticProps = async () => {
+  const res = await fetch('https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=skvggor&format=json&api_key=df8ee1a832c074bd87168b37d8946004')
+  const data = await res.json()
+
+  return {
+    props: {
+      data
+    }
+  }
+}
+
+export default function Home({ data }) {
   const content = {
     name: 'skvggor',
     description: [
@@ -83,6 +95,7 @@ export default function Home() {
           />
           <Social items={content.social} />
         </div>
+        <LastFm data={data} />
       </main>
     </div>
   )

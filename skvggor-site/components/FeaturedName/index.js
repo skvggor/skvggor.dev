@@ -5,7 +5,13 @@ function FeaturedName(props) {
   const description = descriptionArray => {
     return (
       <p className={styles.description}>
-        {descriptionArray.map(piece => piece.text)}
+        {
+          descriptionArray.map(piece => {
+            return (
+              <span key={piece.id}>{piece.text}</span>
+            )
+          })
+        }
       </p>
     )
   }
