@@ -1,0 +1,26 @@
+@use 'styles/mixins/breakpoints'
+
+.name
+  color: #fff
+  font-size: 55px
+  font-weight: 900
+  margin: 0
+  text-transform: uppercase
+
+  @include breakpoints.respond-to('small')
+    font-size: 130px
+
+  @include breakpoints.respond-to('medium')
+    font-size: 180px
+
+.description
+  color: #ccc
+  font-size: 16px
+  font-weight: 700
+  margin: 0 0 40px
+
+  @include breakpoints.respond-to('small')
+    font-size: 18px
+
+  @include breakpoints.respond-to('medium')
+    font-size: 24px
