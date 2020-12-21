@@ -4,7 +4,7 @@ function Link(props) {
   return (
     <>
       <a
-        className={styles[props.type]}
+        className={styles[props.type] || styles.default}
         href={props.link || '#'}
         target={props.target || '_self'}
       >

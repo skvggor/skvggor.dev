@@ -43,7 +43,7 @@ function Social(props) {
   ))
 
   return (
-    <div className="social">{social}</div>
+    <div className={styles.social}>{social}</div>
   )
 }
 

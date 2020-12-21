@@ -3,22 +3,28 @@ import Head from 'next/head'
 import FeaturedName from '../components/FeaturedName'
 import Social from '../components/Social'
 import Link from '../components/Link'
+import GitHub from '../components/GitHub'
 import LastFm from '../components/LastFm'
 
 import styles from '../styles/Home.module.sass'
 
 export const getStaticProps = async () => {
-  const res = await fetch('https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=skvggor&format=json&api_key=df8ee1a832c074bd87168b37d8946004')
-  const data = await res.json()
+  const lastFmResponse = await fetch('https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=skvggor&format=json&api_key=df8ee1a832c074bd87168b37d8946004')
+  const lastFmData = await lastFmResponse.json()
+
+  const githubResponse = await fetch('https://api.github.com/users/marcker/events/public')
+  const githubData = await githubResponse.json()
+
 
   return {
     props: {
-      data
+      lastFmData,
+      githubData
     }
   }
 }
 
-export default function Home({ data }) {
+export default function Home({ lastFmData, githubData }) {
   const content = {
     name: 'skvggor',
     description: [
@@ -77,7 +83,9 @@ export default function Home({ data }) {
         icon: 'last-fm',
         link: 'https://last.fm/user/skvggor'
       }
-    ]
+    ],
+    lastfm: { lastFmData },
+    github: { githubData }
   }
 
   return (
@@ -88,6 +96,7 @@ export default function Home({ data }) {
       </Head>
 
       <main className={styles.main}>
+        {/* <GitHub data={content.github} /> */}
         <div className={styles.content}>
           <FeaturedName
             name={content.name}
@@ -95,7 +104,7 @@ export default function Home({ data }) {
           />
           <Social items={content.social} />
         </div>
-        <LastFm data={data} />
+        <LastFm data={content.lastfm} />
       </main>
     </div>
   )
