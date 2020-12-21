@@ -8,7 +8,7 @@ import LastFm from '../components/LastFm'
 
 import styles from '../styles/Home.module.sass'
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const lastFmResponse = await fetch('https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=skvggor&format=json&api_key=df8ee1a832c074bd87168b37d8946004')
   const lastFmData = await lastFmResponse.json()
 
@@ -20,8 +20,7 @@ export const getStaticProps = async () => {
     props: {
       lastFmData,
       githubData
-    },
-    revalidate: 1
+    }
   }
 }
 
