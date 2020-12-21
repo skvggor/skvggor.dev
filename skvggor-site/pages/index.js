@@ -20,7 +20,8 @@ export const getStaticProps = async () => {
     props: {
       lastFmData,
       githubData
-    }
+    },
+    revalidate: 1
   }
 }
 
