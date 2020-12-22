@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.70710678"
-     inkscape:cx="288.97901"
-     inkscape:cy="1006.1103"
+     inkscape:cx="290.62089"
+     inkscape:cy="1967.7755"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -63,6 +63,13 @@
        y="-108.58508"
        inkscape:export-xdpi="92"
        inkscape:export-ydpi="92" />
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.32291663;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect837"
+       width="317.5"
+       height="166.6875"
+       x="-66.229378"
+       y="-56.401993" />
     <g
        id="g1037"
        transform="translate(0.03501783,-8.5194957)">
@@ -125,5 +132,55 @@
    id="tspan1002-8">'minha mensagem de commit'</tspan> in <tspan
    style="fill:#ffffff;stroke-width:0.26458332"
    id="tspan1004-7">'abc-abc' repo</tspan>]</tspan></text>
+    <rect
+       style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:1.32291663;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect837-2"
+       width="317.5"
+       height="166.6875"
+       x="-78.863144"
+       y="-342.47025" />
+    <g
+       id="g992"
+       transform="translate(-5.6591034e-6,-7.5521261)">
+      <text
+         id="text819-8"
+         y="-248.15845"
+         x="-60.260052"
+         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:53.1867485px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat Ultra-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.32291663;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:'Montserrat Heavy';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.32291663;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           y="-248.15845"
+           x="-60.260052"
+           id="tspan817-9"
+           sodipodi:role="line">SKVGGOR</tspan></text>
+      <text
+         id="text935-7"
+         y="-229.96092"
+         x="-33.378368"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:106.56845093px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.81912994px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';fill:#cccccc;stroke-width:0.26458332"
+           y="-229.96092"
+           x="-33.378368"
+           id="tspan933-3"
+           sodipodi:role="line">I am a web developer currently working</tspan></text>
+      <text
+         id="text935-7-0"
+         y="-216.99513"
+         x="-4.799705"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:106.56845093px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.81912994px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';fill:#cccccc;stroke-width:0.26458332"
+           y="-216.99513"
+           x="-4.799705"
+           id="tspan933-3-5"
+           sodipodi:role="line"> with <tspan
+   id="tspan955"
+   style="fill:#41b883;fill-opacity:1">Vue</tspan> and <tspan
+   id="tspan961"
+   style="fill:#61dafb;fill-opacity:1">React</tspan> at <tspan
+   id="tspan967"
+   style="fill:#ffffff;fill-opacity:1">Match</tspan>.</tspan></text>
+    </g>
   </g>
 </svg>
