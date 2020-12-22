@@ -91,8 +91,17 @@ export default function Home({ lastFmData, githubData }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>/home/skvggor</title>
+        <meta name="description" content="Website of developer Marcos Lima (aka Skvggor)." />
+
+        <meta property="og:title" content="Marcos Lima (skvggor): developer" />
+        <meta property="og:description" content="Website of developer Marcos Lima (aka Skvggor)." />
+        <meta property="og:image" content="/opengraph.png" />
+        <meta property="og:url" content="https://skvggor.dev" />
+
+        <link rel="canonical" href="https://skvggor.dev" />
         <link rel="icon" href="/favicon.ico" />
+
+        <title>Marcos Lima (skvggor): developer</title>
       </Head>
 
       <main className={styles.main}>
