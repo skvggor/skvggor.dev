@@ -90,22 +90,22 @@ export default function Home({ lastFmData, githubData }) {
   return (
     <div className={styles.container}>
       <Head>
-        <meta name="description" content="Website of developer Marcos Lima (aka skvggor)." />
+        <meta name="description" content="I'm a developer currently working with Vue and React at Match." />
 
-        <meta property="og:title" content="Marcos Lima (skvggor): developer" />
-        <meta property="og:description" content="Website of developer Marcos Lima (aka skvggor)." />
+        <meta property="og:title" content="Marcos Lima" />
+        <meta property="og:description" content="I'm a developer currently working with Vue and React at Match." />
         <meta property="og:image" content="/opengraph.png" />
         <meta property="og:url" content="https://skvggor.dev" />
 
-        <meta name="twitter:title" content="Marcos Lima (skvggor): developer" />
-        <meta name="twitter:description" content="Website of developer Marcos Lima (aka skvggor)." />
+        <meta name="twitter:title" content="Marcos Lima" />
+        <meta name="twitter:description" content="I'm a developer currently working with Vue and React at Match." />
         <meta name="twitter:image" content="/twitter.png" />
         <meta name="twitter:card" content="summary_large_image" />
 
         <link rel="canonical" href="https://skvggor.dev" />
         <link rel="icon" href="/favicon.ico" />
 
-        <title>Marcos Lima (skvggor): developer</title>
+        <title>Marcos Lima</title>
       </Head>
 
       <main className={styles.main}>
