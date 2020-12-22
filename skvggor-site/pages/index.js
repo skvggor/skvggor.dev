@@ -99,7 +99,7 @@ export default function Home({ lastFmData, githubData }) {
 
         <meta property="twitter:title" content="Marcos Lima" />
         <meta property="twitter:description" content="I'm a developer currently working with Vue and React at Match." />
-        <meta property="twitter:image" content="/twitter.png" />
+        <meta property="twitter:image" content="/opengraph.png" />
         <meta property="twitter:domain" content="https://skvggor.dev" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:creator" content="https://skvggor.dev" />
