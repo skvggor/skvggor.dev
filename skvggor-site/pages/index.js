@@ -97,10 +97,10 @@ export default function Home({ lastFmData, githubData }) {
         <meta property="og:image" content="/opengraph.png" />
         <meta property="og:url" content="https://skvggor.dev" />
 
-        <meta name="twitter:title" content="Marcos Lima" />
-        <meta name="twitter:description" content="I'm a developer currently working with Vue and React at Match." />
-        <meta name="twitter:image" content="/twitter.png" />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Marcos Lima" />
+        <meta property="twitter:description" content="I'm a developer currently working with Vue and React at Match." />
+        <meta property="twitter:image" content="/twitter.png" />
+        <meta property="twitter:card" content="summary_large_image" />
 
         <link rel="canonical" href="https://skvggor.dev" />
         <link rel="icon" href="/favicon.ico" />
