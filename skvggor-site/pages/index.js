@@ -103,7 +103,7 @@ export default function Home({ lastFmData, githubData }) {
         <meta property="twitter:domain" content="https://skvggor.dev" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:creator" content="https://skvggor.dev" />
-        <meta property="twitter:site" content="https://skvggor.dev">
+        <meta property="twitter:site" content="https://skvggor.dev" />
 
         <link rel="canonical" href="https://skvggor.dev" />
         <link rel="icon" href="/favicon.ico" />
