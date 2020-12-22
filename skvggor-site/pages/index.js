@@ -91,7 +91,7 @@ export default function Home({ lastFmData, githubData }) {
   return (
     <div className={styles.container}>
       <Head>
-        <meta name="description" content="Website of developer Marcos Lima (aka Skvggor)." />
+        <meta name="description" content="Website of developer Marcos Lima (aka skvggor)." />
 
         <meta property="og:title" content="Marcos Lima (skvggor): developer" />
         <meta property="og:description" content="Website of developer Marcos Lima (aka Skvggor)." />
