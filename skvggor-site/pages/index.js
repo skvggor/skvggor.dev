@@ -94,7 +94,7 @@ export default function Home({ lastFmData, githubData }) {
         <meta name="description" content="Website of developer Marcos Lima (aka skvggor)." />
 
         <meta property="og:title" content="Marcos Lima (skvggor): developer" />
-        <meta property="og:description" content="Website of developer Marcos Lima (aka Skvggor)." />
+        <meta property="og:description" content="Website of developer Marcos Lima (aka skvggor)." />
         <meta property="og:image" content="/opengraph.png" />
         <meta property="og:url" content="https://skvggor.dev" />
 
