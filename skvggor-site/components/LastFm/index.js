@@ -13,7 +13,7 @@ function LastFm(props) {
             className={styles.text}
           >
             <span className={styles.line}>🎶 Now listening to '<Link link={track.url} text={track.name} />'</span>
-            <span className={styles.line}>by '<Link link={`https://www.last.fm/music/${track.artist['#text']}`} text={track.artist['#text']} />'</span>
+            <span className={styles.line}>by '<Link link={`https://www.last.fm/music/${track.artist['#text'].replace(' ', '+')}`} text={track.artist['#text']} />'</span>
           </span>
         )
       }
@@ -24,7 +24,7 @@ function LastFm(props) {
             className={styles.text}
           >
             <span className={styles.line}>🎶 Listened to '<Link link={track.url} text={track.name} />'</span>
-            <span className={styles.line}>by '<Link link={`https://www.last.fm/music/${track.artist['#text']}`} text={track.artist['#text']} />'</span>
+            <span className={styles.line}>by '<Link link={`https://www.last.fm/music/${track.artist['#text'].replace(' ', '+')}`} text={track.artist['#text']} />'</span>
           </span>
         )
       }

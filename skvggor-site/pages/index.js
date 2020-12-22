@@ -15,7 +15,6 @@ export const getServerSideProps = async () => {
   const githubResponse = await fetch('https://api.github.com/users/marcker/events/public')
   const githubData = await githubResponse.json()
 
-
   return {
     props: {
       lastFmData,
@@ -97,6 +96,7 @@ export default function Home({ lastFmData, githubData }) {
         <meta property="og:description" content="Website of developer Marcos Lima (aka skvggor)." />
         <meta property="og:image" content="/opengraph.png" />
         <meta property="og:url" content="https://skvggor.dev" />
+        <meta name="twitter:card" content="summary_large_image" />
 
         <link rel="canonical" href="https://skvggor.dev" />
         <link rel="icon" href="/favicon.ico" />
