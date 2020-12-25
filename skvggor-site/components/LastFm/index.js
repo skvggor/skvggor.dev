@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 import Link from '../Link'
 
 import styles from './index.module.sass'
@@ -27,7 +25,7 @@ function LastFm(props) {
                   '/music-no-image.webp'
 
       return template({
-        image: <Image
+        image: <img
                 className={styles.image}
                 src={src}
                 alt={`${text}'${track.name}' by '${track.artist['#text']}'`}
