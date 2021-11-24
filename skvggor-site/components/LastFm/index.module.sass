@@ -2,22 +2,29 @@
 
 .container
   bottom: 0
-  left: 50%
+  left: 0
+  max-width: 60vw
   padding: 0 10px 10px 10px
   position: absolute
-  transform: translate(-50%, 0)
   width: 100%
 
   @include breakpoints.respond-to('small')
     padding: 0 20px 20px 20px
 
 .content
-  align-items: center
+  align-items: end
   display: flex
 
   .container-image
+    height: 70px
     margin-right: 10px
     position: relative
+    width: 70px
+
+    .image
+      height: 70px
+      object-fit: cover
+      width: 70px
 
     .visualizer
       align-items: flex-end
@@ -26,7 +33,7 @@
       height: 100%
       justify-content: space-between
       opacity: .7
-      padding: 10px 5px
+      padding: 5px
       position: absolute
       width: 100%
 

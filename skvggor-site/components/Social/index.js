@@ -1,5 +1,5 @@
 import { IconContext } from 'react-icons'
-import { SiGithub, SiTwitter, SiInstagram, SiLastDotFm } from 'react-icons/si'
+import { SiGithub, SiTwitter, SiInstagram, SiLastdotfm, SiStrava } from 'react-icons/si'
 import { CgCode } from 'react-icons/cg'
 import { VscError } from 'react-icons/vsc'
 
@@ -11,20 +11,17 @@ function Social(props) {
 
     if (name === 'source-code') {
       icon = <CgCode />
-    }
-    else if (name === 'github') {
+    } else if (name === 'github') {
       icon = <SiGithub />
-    }
-    else if (name === 'twitter') {
+    } else if (name === 'twitter') {
       icon = <SiTwitter />
-    }
-    else if (name === 'instagram') {
+    } else if (name === 'instagram') {
       icon = <SiInstagram />
-    }
-    else if (name === 'last-fm') {
-      icon = <SiLastDotFm />
-    }
-    else {
+    } else if (name === 'last-fm') {
+      icon = <SiLastdotfm />
+    } else if (name === 'strava') {
+      icon = <SiStrava />
+    } else {
       icon = <VscError />
     }
 
