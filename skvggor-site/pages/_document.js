@@ -5,9 +5,9 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-M7DD801H4P" />
+          <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-N74B7GM" />
           <script dangerouslySetInnerHTML={{
-            __html: `window.dataLayer=window.dataLayer || []; function gtag(){dataLayer.push(arguments);}gtag('js', new Date()); gtag('config', 'G-M7DD801H4P');`
+            __html: `window.dataLayer=window.dataLayer || []; function gtag(){dataLayer.push(arguments);}gtag('js', new Date()); gtag('config', 'GTM-N74B7GM');`
           }}/>
         </Head>
         <body>
