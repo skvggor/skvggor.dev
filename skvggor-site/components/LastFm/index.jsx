@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
+import { usePalette } from 'color-thief-react'
 
 import Link from '../Link'
 
 import styles from './index.module.sass'
 
-function LastFm(props) {
+const LastFm = (props) => {
   const [heightVisualizer, setHeightVisualizer] = useState([ 5, 5, 5, 5, 5, 5, 5, ])
   const MAX_HEIGHT_BAR = 60
   let showVisualizer = false
@@ -29,20 +30,20 @@ function LastFm(props) {
     }
   })
 
-  const renderBars = () => (
+  const renderBars = (data) => (
     heightVisualizer.map((barHeight, index) => {
       let backgroundColor
 
       if (barHeight > 0) {
-        backgroundColor = '#ffffff'
+        backgroundColor = data[0]
       }
 
       if (barHeight > 20) {
-        backgroundColor = '#41b883'
+        backgroundColor = data[1]
       }
 
       if (barHeight > 40) {
-        backgroundColor = '#61dafb'
+        backgroundColor = data[2]
       }
 
       const span = <span
@@ -69,6 +70,8 @@ function LastFm(props) {
       const src = track.image[3]['#text'] ||
                   '/music-no-image.webp'
 
+      const { data, loading, error } = usePalette(src, 3, 'hex', { crossOrigin: true })
+
       return (
         <div
           key={index}
@@ -76,7 +79,7 @@ function LastFm(props) {
         >
           <div className={styles['container-image']}>
             <span className={styles['visualizer']}>
-              {showVisualizer && renderBars()}
+              {(!loading && showVisualizer) && renderBars(data)}
             </span>
             <img
               className={styles.image}
@@ -87,8 +90,8 @@ function LastFm(props) {
             />
           </div>
           <div className={styles['container-text']}>
-            <span className={styles.line}>{text}'<Link link={track.url} text={track.name} />'</span>
-            <span className={styles.line}>by '<Link link={`https://www.last.fm/music/${track.artist['#text'].replace(/\s/g, '+')}`} text={track.artist['#text']} />'</span>
+            <span className={styles.line}>{text}'<Link color={!loading ? data[0] : '#ccc'} link={track.url} text={track.name} />'</span>
+            <span className={styles.line}>by '<Link color={!loading ? data[1] : '#ccc'} link={`https://www.last.fm/music/${track.artist['#text'].replace(/\s/g, '+')}`} text={track.artist['#text']} />'</span>
           </div>
         </div>
       )
