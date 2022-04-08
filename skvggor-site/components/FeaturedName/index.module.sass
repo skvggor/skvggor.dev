@@ -1,14 +1,14 @@
 @use 'styles/mixins/breakpoints'
 
 .name
+  -webkit-text-fill-color: transparent
   background: linear-gradient(45deg, #61dafb 20%, #41b883 80%)
+  background-clip: text
   color: #fff
   font-size: 55px
   font-weight: 900
   margin: 0
   text-transform: uppercase
-  -webkit-text-fill-color: transparent
-  background-clip: text
 
   @include breakpoints.respond-to('small')
     font-size: 130px
