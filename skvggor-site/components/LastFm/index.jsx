@@ -70,7 +70,7 @@ const LastFm = (props) => {
       const src = track.image[3]['#text'] ||
                   '/music-no-image.webp'
 
-      const { data, loading, error } = usePalette(src, 3, 'hex', { crossOrigin: true })
+      const { data, loading, error } = usePalette(src, 10, 'hex', { crossOrigin: true })
 
       return (
         <div

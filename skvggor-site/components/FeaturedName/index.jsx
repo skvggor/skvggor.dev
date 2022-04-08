@@ -4,7 +4,7 @@ import styles from './index.module.sass'
 
 const FeaturedName = (props) => {
 
-  const { data, loading, error } = usePalette(props.lastFmImage, 3, 'hex', { crossOrigin: true })
+  const { data, loading, error } = usePalette(props.lastFmImage, 10, 'hex', { crossOrigin: true })
 
   const description = (descriptionArray) => {
     return (
