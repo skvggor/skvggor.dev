@@ -26,7 +26,7 @@ export const getServerSideProps = async () => {
 }
 
 export default function Home({ lastFmData, stravaData }) {
-  const { data, loading, error } = usePalette(lastFmData.recenttracks.track[0].image[3]['#text'] || '/music-no-image.webp', 3, 'hex', { crossOrigin: true })
+  const { data, loading, error } = usePalette(lastFmData.recenttracks.track[0].image[3]['#text'] || '/music-no-image.webp', 10, 'hex', { crossOrigin: true })
 
   const content = {
     name: 'skvggor',
