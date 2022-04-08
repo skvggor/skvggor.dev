@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import { usePalette } from 'color-thief-react'
+
 
 import FeaturedName from '../components/FeaturedName'
 import Social from '../components/Social'
@@ -24,15 +26,17 @@ export const getServerSideProps = async () => {
 }
 
 export default function Home({ lastFmData, stravaData }) {
+  const { data, loading, error } = usePalette(lastFmData.recenttracks.track[0].image[3]['#text'] || '/music-no-image.webp', 3, 'hex', { crossOrigin: true })
+
   const content = {
     name: 'skvggor',
     description: [
       { id: 0, text: 'I\'m a developer currently working with ' },
-      { id: 1, text: <Link type="vue" link="https://vuejs.org/" text="Vue" /> },
+      { id: 1, text: <Link color={!loading ? data[0] : '#ccc'} type="vue" link="https://vuejs.org/" text="Vue" /> },
       { id: 2, text: ' and ' },
-      { id: 3, text: <Link type="react" link="https://reactjs.org/" text="React" /> },
+      { id: 3, text: <Link color={!loading ? data[1] : '#ccc'} type="react" link="https://reactjs.org/" text="React" /> },
       { id: 4, text: ' at ' },
-      { id: 5, text: <Link type="match" link="https://www.match.mt/" text="Match" /> },
+      { id: 5, text: <Link color={!loading ? data[2] : '#ccc'} type="match" link="https://www.match.mt/" text="Match" /> },
       { id: 6, text: '.' },
     ],
     social: [
@@ -76,6 +80,7 @@ export default function Home({ lastFmData, stravaData }) {
           <FeaturedName
             name={content.name}
             description={content.description}
+            lastFmImage={content.lastfm.lastFmData.recenttracks.track[0].image[3]['#text']}
           />
           <Social items={content.social} />
         </div>
