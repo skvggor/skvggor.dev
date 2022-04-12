@@ -18,13 +18,25 @@ const FeaturedName = (props) => {
   }
 
   const applyStyleInDisplay = (element) => {
+    let styled
+
     if (element) {
-      return element.style.setProperty(
-        'background-image',
-        `linear-gradient(45deg, ${data[0]} 20%, ${data[1]} 80%)`,
-        'important'
-      )
+      if (data !== undefined) {
+        styled = element.style.setProperty(
+          'background-image',
+          `linear-gradient(45deg, ${data[0]} 20%, ${data[1]} 80%)`,
+          'important'
+        )
+      } else {
+        styled = element.style.setProperty(
+          'background-image',
+          'linear-gradient(45deg, #f00 20%, #666 80%)',
+          'important'
+        )
+      }
     }
+
+    return styled
   }
 
   return (
