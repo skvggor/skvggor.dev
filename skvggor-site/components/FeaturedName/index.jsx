@@ -10,7 +10,12 @@ const FeaturedName = (props) => {
     return (
       <p className={styles.description}>
         { descriptionArray.map((piece) => {
-            return (<span key={piece.id}>{piece.text}</span>)
+            return (
+              <span
+                key={piece.id}
+                dangerouslySetInnerHTML={{ __html: piece.text }}
+              />
+            )
           })
         }
       </p>
