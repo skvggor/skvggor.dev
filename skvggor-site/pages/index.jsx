@@ -1,10 +1,7 @@
 import Head from 'next/head'
-import { usePalette } from 'color-thief-react'
-
 
 import FeaturedName from '../components/FeaturedName'
 import Social from '../components/Social'
-import Link from '../components/Link'
 import LastFm from '../components/LastFm'
 import Strava from '../components/Strava'
 
@@ -26,19 +23,13 @@ export const getServerSideProps = async () => {
 }
 
 export default function Home({ lastFmData, stravaData }) {
-  const { data, loading, error } = usePalette(lastFmData.recenttracks.track[0].image[3]['#text'] || '/music-no-image.webp', 10, 'hex', { crossOrigin: true })
-
   const content = {
     name: 'skvggor',
-    description: [
-      { id: 0, text: 'I\'m a developer currently working with ' },
-      { id: 1, text: <Link color={!loading ? data[0] : '#ccc'} type="vue" link="https://vuejs.org/" text="Vue" /> },
-      { id: 2, text: ' and ' },
-      { id: 3, text: <Link color={!loading ? data[1] : '#ccc'} type="react" link="https://reactjs.org/" text="React" /> },
-      { id: 4, text: ' at ' },
-      { id: 5, text: <Link color={!loading ? data[2] : '#ccc'} type="match" link="https://www.match.mt/" text="Match" /> },
-      { id: 6, text: '.' },
-    ],
+    description: [{
+      id: 0,
+      text: `Tech lead currently working with software development<br>
+              at <a href="https://www.vipbrtelecom.com.br/" target="_self">VIP BR Telecom</a> (<a href="https://alloha.com/" target="_self">Alloha Fibra</a>).`
+    }],
     social: [
       { id: 0, icon: 'source-code', link: 'https://github.com/marcker/skvggor.dev/tree/master/skvggor-site' },
       { id: 1, icon: 'github', link: 'https://github.com/marcker' },
@@ -54,25 +45,25 @@ export default function Home({ lastFmData, stravaData }) {
   return (
     <div className={styles.container}>
       <Head>
-        <meta name="description" content="I'm a developer currently working with Vue and React at Match." />
+        <meta name="description" content="Tech lead currently working with software development at VIP BR Telecom (Alloha Fibra)." />
 
         <meta property="og:title" content="Marcos Lima" />
-        <meta property="og:description" content="I'm a developer currently working with Vue and React at Match." />
+        <meta property="og:description" content="Tech lead currently working with software development at VIP BR Telecom (Alloha Fibra)." />
         <meta property="og:image" content="/opengraph.png" />
-        <meta property="og:url" content="https://skvggor.dev" />
+        <meta property="og:url" content="https://skvggor.vercel.app" />
 
         <meta property="twitter:title" content="Marcos Lima" />
-        <meta property="twitter:description" content="I'm a developer currently working with Vue and React at Match." />
+        <meta property="twitter:description" content="Tech lead currently working with software development at VIP BR Telecom (Alloha Fibra)." />
         <meta property="twitter:image" content="/opengraph.png" />
-        <meta property="twitter:domain" content="https://skvggor.dev" />
+        <meta property="twitter:domain" content="https://skvggor.vercel.app" />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:creator" content="https://skvggor.dev" />
-        <meta property="twitter:site" content="https://skvggor.dev" />
+        <meta property="twitter:creator" content="https://skvggor.vercel.app" />
+        <meta property="twitter:site" content="https://skvggor.vercel.app" />
 
-        <link rel="canonical" href="https://skvggor.dev" />
+        <link rel="canonical" href="https://skvggor.vercel.app" />
         <link rel="icon" href="/favicon.ico" />
 
-        <title>Marcos Lima</title>
+        <title>Marcos Lima - Tech Lead</title>
       </Head>
 
       <main className={styles.main}>
