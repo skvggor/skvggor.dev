@@ -8,9 +8,8 @@ function Link(props) {
         className={styles[props.type] || styles.default}
         href={props.link || '#'}
         target={props.target || '_self'}
-      >
-        {props.text}
-      </a>
+        dangerouslySetInnerHTML={{ __html: props.text }}
+      />
     </>
   )
 }
