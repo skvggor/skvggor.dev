@@ -27,7 +27,7 @@ export default function Home({ lastFmData, stravaData }) {
     name: 'skvggor',
     description: [{
       id: 0,
-      text: `I\'m a tech lead currently working with software development<br>
+      text: `Tech lead currently working with software development<br>
               at <a href="https://www.vipbrtelecom.com.br/" target="_self">VIP BR Telecom</a> (<a href="https://alloha.com/" target="_self">Alloha Fibra</a>).`
     }],
     social: [
@@ -45,15 +45,15 @@ export default function Home({ lastFmData, stravaData }) {
   return (
     <div className={styles.container}>
       <Head>
-        <meta name="description" content="I'm a tech lead currently working with software development at VIP BR Telecom (Alloha Fibra)." />
+        <meta name="description" content="Tech lead currently working with software development at VIP BR Telecom (Alloha Fibra)." />
 
         <meta property="og:title" content="Marcos Lima" />
-        <meta property="og:description" content="I'm a tech lead currently working with software development at VIP BR Telecom (Alloha Fibra)." />
+        <meta property="og:description" content="Tech lead currently working with software development at VIP BR Telecom (Alloha Fibra)." />
         <meta property="og:image" content="/opengraph.png" />
         <meta property="og:url" content="https://skvggor.vercel.app" />
 
         <meta property="twitter:title" content="Marcos Lima" />
-        <meta property="twitter:description" content="I'm a tech lead currently working with software development at VIP BR Telecom (Alloha Fibra)." />
+        <meta property="twitter:description" content="Tech lead currently working with software development at VIP BR Telecom (Alloha Fibra)." />
         <meta property="twitter:image" content="/opengraph.png" />
         <meta property="twitter:domain" content="https://skvggor.vercel.app" />
         <meta property="twitter:card" content="summary_large_image" />
